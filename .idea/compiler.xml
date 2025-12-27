@@ -2,22 +2,26 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
-      <profile name="Annotation profile for UserService" enabled="true">
+      <profile name="Annotation profile for PaymentService" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.42/lombok-1.18.42.jar" />
         </processorPath>
-        <module name="UserService" />
+        <module name="BookingService" />
         <module name="EventCatalogService" />
+        <module name="UserService" />
+        <module name="PaymentService" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="BookingService" options="-parameters" />
       <module name="COMP301Project" options="-parameters" />
       <module name="EventCatalogService" options="-parameters" />
+      <module name="PaymentService" options="-parameters" />
       <module name="UserService" options="-parameters" />
     </option>
   </component>
