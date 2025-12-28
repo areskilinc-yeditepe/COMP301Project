@@ -2,12 +2,18 @@ package com.yeditepe.UserService;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.web.servlet.config.annotation.EnableWebMvc;
-//import springfox.documentation.swagger2.annotations.EnableSwagger2;
+import io.swagger.v3.oas.annotations.OpenAPIDefinition;
+import io.swagger.v3.oas.annotations.info.Info;
+
+@OpenAPIDefinition(
+		info = @Info(
+				title = "Student API",
+				version = "1.0",
+				description = "API documentation for managing students"
+		)
+)
 
 @SpringBootApplication
-//@EnableSwagger2
-//@EnableWebMvc
 public class UserServiceApplication {
 
 	public static void main(String... args) {
