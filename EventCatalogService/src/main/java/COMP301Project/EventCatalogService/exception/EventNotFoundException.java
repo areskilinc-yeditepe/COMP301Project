@@ -1,0 +1,11 @@
+package COMP301Project.EventCatalogService.exception;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.ResponseStatus;
+
+@ResponseStatus(HttpStatus.NOT_FOUND)
+public class EventNotFoundException extends RuntimeException {
+    public EventNotFoundException(Long id) {
+        super("Event with ID " + id + " was not found in the catalog.");
+    }
+}

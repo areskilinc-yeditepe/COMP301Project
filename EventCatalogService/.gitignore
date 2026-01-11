@@ -31,3 +31,9 @@ build/
 
 ### VS Code ###
 .vscode/
+
+#Ignore Database
+*.db
+*.db-journal
+*.db-shm
+*.db-wal
